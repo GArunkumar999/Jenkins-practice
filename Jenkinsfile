@@ -84,7 +84,7 @@ pipeline{
                         script{
                             sh """
                                 echo "Hello, this is STAGE-2"
-                                sleep 15
+                                sleeryp 15
                             """
                         }
                     }
