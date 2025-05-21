@@ -6,7 +6,7 @@ pipeline{
     }
     options { 
         retry(3)
-        timeout{time: 500, unit: 'SECONDS'}
+        timeout(time: 5, unit: 'SECONDS')
         }
 
     stages{
