@@ -3,7 +3,7 @@ pipeline{
     environment{
         project="expense"
         component="backend"
-        environment="QA"
+        DEPLOY_TO="QA"
     }
     options { 
         retry(3)
