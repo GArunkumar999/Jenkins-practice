@@ -4,6 +4,7 @@ pipeline{
         project="expense"
         component="backend"
     }
+    options { retry(3) }
     stages{
         stage('build'){
             steps{
@@ -11,6 +12,7 @@ pipeline{
                     echo "This is build"
                     echo "project is ${project}"
                     echo "component is ${component}"
+                    sdf
                 }
             }
         }
