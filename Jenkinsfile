@@ -65,7 +65,7 @@ pipeline{
             }
         }
         stage('Parallel Stages') {
-            failFast false
+            failFast true
             parallel {
                 stage('STAGE-1') {
                     
