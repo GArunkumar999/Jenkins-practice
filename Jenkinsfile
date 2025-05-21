@@ -73,7 +73,7 @@ pipeline{
                         script{
                             sh """
                                 echo "Hello, this is STAGE-1"
-                                sleevfep 15
+                                sleep 15
                             """
                         }
                     }
