@@ -4,7 +4,11 @@ pipeline{
         project="expense"
         component="backend"
     }
-    options { retry(3) }
+    options { 
+        retry(3)
+        timeout{time: 5, unit: 'SECONDS'}
+        }
+
     stages{
         stage('build'){
             steps{
