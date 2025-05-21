@@ -1,9 +1,9 @@
 pipeline{
     agent { label 'AGENT-1' }
-    // environment{
-    //     project="expense"
-    //     component="backend"
-    // }
+    environment{
+        project="expense"
+        component="backend"
+    }
     stages{
         stage('build'){
             steps{
