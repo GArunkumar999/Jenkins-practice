@@ -23,4 +23,18 @@ pipeline{
             }
         }
     }
+    post{
+        always{
+            echo "say hello always"
+        }
+        success{
+            echo "say hello in success"
+        }
+        failure{
+            echo "say hello in failure"
+        }
+        unsuccessful{
+            echo "say hello in unsuccessful"
+        }
+    }
 }
