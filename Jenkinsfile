@@ -32,6 +32,7 @@ pipeline{
     post{
         always{
             echo "say hello always"
+            deleteDir()
         }
         success{
             echo "say hello in success"
