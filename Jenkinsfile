@@ -65,7 +65,7 @@ pipeline{
             }
         }
         stage('Parallel Stages') {
-            failFast true
+            failFast false
             parallel {
                 stage('STAGE-1') {
                     
@@ -73,7 +73,7 @@ pipeline{
                         script{
                             sh """
                                 echo "Hello, this is STAGE-1"
-                                sleep 15
+                                sleerfep 15
                             """
                         }
                     }
